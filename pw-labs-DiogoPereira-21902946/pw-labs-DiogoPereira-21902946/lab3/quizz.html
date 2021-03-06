@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Diogo Pereira">
+        <meta name="keywords" content="Nova Iorque">
+        <meta name="description" content="Website sobre Nova Iorque">
+    <title>Nova Iorque </title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/New York.ico"/>
+    </head>
+    <body>
+        <body style="background-color:rgb(159, 177, 204)"></body>
+        <h1>Nova Iorque</h1>
+        <img src="images/New York.jpg" alt="Nova Iorque">
+        <br>
+        <b><a href="index.html">Introdução</a></b>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informações</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="comentarios.html">Comentários</a>
+        <a href="../index.html">Home</a>
+        <h3>Quizz</h3>
+        
+        <form >
+            <fieldset>
+                <legend>Identificação:</legend>
+                <p>Nome:  <input type="text" name="Nome" value="Nome" required autofocus></p>
+                <p>Apelido: <input type="text" name="Apelido" value="Apelido" required></p>
+                <p>Email: <input type="email" id="email" name="email" placeholder="nome@gmail.com" autocomplete="off" required></p>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 1:</legend>
+                <p>Qual o nome do monumento turístico feito de cobre? </p>
+                <select name="Monumentos" id="Monumentos">
+                    <option value="correta">Estátua da Liberdade</option>
+                    <option value="incorreta">Atlas</option>
+                    <option value="incorreta">Alice no País das Maravilas</option>
+                    <option value="incorreta">Touro de Wall Street (Charging Bull)</option>
+                </select>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 2:</legend>
+                <p>Quais dos seguintes são apelidos de Nova Iorque?</p>
+                <p><input type="checkbox" id="apelido1" name="apelido1" value="correta">Big Apple</p>
+                <p><input type="checkbox" id="apelido2" name="apelido2" value="correta">City That Never Sleeps</p>
+                <p><input type="checkbox" id="apelido3" name="apelido3" value="correta">N.Y.C</p>
+                <p><input type="checkbox" id="apelido4" name="apelido4" value="incorreta">Sin City</p>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 3:</legend>
+                <p>Em que data teve lugar o acontecimento trágico que atingiu as Torres Gémeas?</p>
+                <input type="date" id="date" name="date">
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 4:</legend>
+                <p>Escolha a cor que mais se assemelha à cor dos táxis de Nova Iorque.</p>
+                <input type="color" id="corTaxis" name="corTaxis" value="#ff0000">
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 5:</legend>
+                <p>Selecione a região no mapa que representa Brooklyn.</p>
+                <input type="image" src="images/5_boroughs_New_Yor.png" alt="5 boroughs Nova Iorque" width="300" height="400" onclick="return false">
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 6:</legend>
+                <p>Em que ano foi fundada Nova Iorque?</p>
+                 <input list="years" name="year">
+                 <datalist id="years">
+                     <option value="1634"></option>
+                     <option value="1645"></option>
+                     <option value="1626"></option>
+                     <option value="1615"></option>
+                 </datalist>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 7:</legend>
+                <p>Qual das seguintes é a comida mais popular das ruas de Nova Iorque?</p>
+                <select name="food" id="food" multiple>
+                    <option value="Bagel">Bagel</option>
+                    <option value="Hot Dog">Hot Dog</option>
+                    <option value="Pretzels">Pretzels</option>
+                    <option value="Donuts">Donuts</option>
+                </select>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Pergunta 8:</legend>
+                <p>Por quantos boroughs é constituida Nova Iorque?</p>
+                <label for="numerosBoroughs">Boroughs(1-5):</label>
+                <input type="range" id="numeroBoroughs" min="1" max="5">
+            </fieldset>
+        </form>
+            
+        </form oninput="dollar.value = parseInt(eur.value)*1.191610">
+            <fieldset>
+                <legend>Curiosidade:</legend>
+                <p>Euro: <input type="number" name="Euro">Euro</p>
+                <p>Dollar: <output name="Dollar">0</output>$</p>
+            </fieldset>
+        <form>
+
+            <fieldset>
+                <legend>Avaliação Quizz:</legend>
+                <p><input type="radio" name="avaliação" id="avaliação1" >Muito Interessante</p>
+                <p><input type="radio" name="avaliação" id="avaliação2" >Interessante </p>
+                <p><input type="radio" name="avaliação" id="avaliação3" >Pouco Interessante </p>
+                <p><input type="radio" name="avaliação" id="avaliação4">Desinteressante </p>
+                <p><input type="number" name="avaliação de 1 a 10" id="avaliação" size="2" min="0" max="10" step="1" required>Avaliação de 0-10</p>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Comentários:</legend>
+                <textarea name="comentarios" id="comentarios" cols="50" rows="10" maxlength="100"></textarea>
+            </fieldset>
+        </form>
+
+        
+        <form method="POST" action="diogomfpereira13@gmail.com">
+          <fieldset>
+             <input type="submit" value="Submeter">  
+          </fieldset>
+        </form>
+    </body>
+</html>
