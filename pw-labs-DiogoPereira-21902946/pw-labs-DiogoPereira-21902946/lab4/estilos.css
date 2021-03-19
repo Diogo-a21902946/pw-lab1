@@ -1,0 +1,206 @@
+*{
+    background-color: rgb(159, 177, 204);
+    font-family: sans-serif;
+    text-decoration: red, underline;
+}
+
+header h1{
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+.center{
+    margin:0 0 0 43%;
+}
+
+.image{
+    margin: 0 0 0 34%;
+}
+
+.menu{
+    margin: 0 0 0 15%;
+}
+
+#text{
+    background-color: deepskyblue;
+    width: 15%;
+}
+
+#legenda{
+    text-decoration: underline;
+}
+
+#background{
+    background-color: white;
+    width: 60%;
+}
+
+[alt~=correto]{
+    background-color: green;
+}
+
+[alt~=errado]{
+    background-color: red;
+}
+
+[src="images/New York.jpg"]{
+    border: 5px solid black;
+}
+
+[src="images/5_boroughs_New_Yor.png"]{
+    border: 5px solid black;
+}
+
+[src="images/Times Square_pequena.jpg"]{
+    border: 5px solid black;
+}
+
+[src="images/Central Park_pequena.jpg"]{
+    border: 5px solid black;
+}
+
+[name="fotoIframe"]{
+    border: 5px solid black;
+}
+
+[name="nome"]{
+    border: 5px solid black;
+}
+
+[src="https://www.youtube.com/embed/7S7smPw9EiE"]{
+    border: 5px solid black;
+
+}
+
+
+a:link{
+    color:blue;
+}
+
+a:link{
+    color: blueviolet;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: saddlebrown;
+}
+
+p::first-letter{
+    font-size: large;
+}
+
+summary::first-letter{
+    font-size: large ;
+}
+
+h3::first-letter{
+    font-size:x-large;
+}
+
+hr + p{
+    font-family: cursive;
+}
+
+footer p{
+    font-family: cursive;
+}
+
+h2,  h3{
+    font-family: 'Quicksand', sans-serif;
+}
+
+tr:nth-child(even) {
+    background: red;
+  }
+  
+tr:nth-child(odd) {
+    background: blue;
+}
+
+nav a[href="index.html"]::after, nav a[href="index.html"]::before{
+    content: url(images/introducao.png);
+}
+
+nav a[href="local.html"]::after, nav a[href="local.html"]::before{
+    content: url(images/local.png); 
+}
+
+nav a[href="comentarios.html"]::after, nav a[href="comentarios.html"]::before{
+    content: url(images/comentarios.png);
+}
+
+nav a[href="quizz.html"]::after, nav a[href="quizz.html"]::before{
+    content: url(images/quizz.png);
+}
+
+nav a[href="multimedia.html"]::after, nav a[href="multimedia.html"]::before{
+    content: url(images/multimedia.png);
+}
+
+nav a[href="info.html"]::after, nav a[href="info.html"]::before{
+    content: url(images/info.png);
+}
+
+nav a[href="html5-css.html"]::after, nav a[href="html5-css.html"]::before{
+    content: url(images/code.png);
+}
+
+nav a[href="../index.html"]::after, nav a[href="../index.html"]::before{
+    content: url(images/home.png);
+}
+
+.poema::first-line{
+    background-color: palegreen;
+}
+
+.poema :nth-last-child(n){
+    background-color: palevioletred;
+}
+
+.poema{
+    display: block;
+    text-align: center;
+    background-color: paleturquoise;
+    margin:0 35% 0 35% ;
+}
+
+input {
+    display: block;
+}
+
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid black;
+  } 
+  
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+  }
+
+image.fixed{
+    background-attachment: fixed;
+}
+
+div.sticky{
+    position: -webkit-sticky;
+  position: sticky;
+}
