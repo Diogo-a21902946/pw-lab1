@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width,initial-scale=1.0"> 
+  <meta name="author" content="Diogo Pereira">
+  <meta name="keywords" content="Nova Iorque">
+  <meta name="description" content="Website sobre Nova Iorque">
+  <title>Nova Iorque </title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/New York.ico" />
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="center">Nova Iorque</h1>
+    <figure class="image">
+      <img src="images/New York.jpg" alt="Nova Iorque" class="img-header">
+      <figcaption>Nova Iorque</figcaption>
+      <details>
+        <summary>Detalhes</summary>
+        <p>Nova Iorque é também conhecida como The City That Never Sleeps ou Big Apple</p>
+      </details>
+    </figure>
+  </header>
+
+  <main class="col-9 col-s-9">
+    <section>
+
+      <p></p>
+      <nav class="flex-container">
+        <div class="grupo1">
+            <a href="index.html">Introdução</a>
+            <b><a href="local.html">Localização</a></b>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informações</a>
+        </div>
+        <div class="grupo2">
+            <a href="quizz.html">Quizz</a>
+            <a href="comentarios.html">Comentários</a>
+            <a href="html5-css.html">HTML5-CSS</a>
+        </div>
+        <div class="grupo3">
+            <a href="../index.html">Home</a>
+        </div>
+
+    </nav>
+    </section>
+
+    <section>
+      <h3>Localização</h3>
+
+      <p>
+        A cidade de Nova York compreende 5 distritos situados no encontro do rio Hudson com o Oceano Atlântico. No
+        centro da cidade fica Manhattan, um distrito com alta densidade demográfica que está entre os principais centros
+        comerciais, financeiros e culturais do mundo. Entre os seus pontos emblemáticos, destacam-se arranha-céus, como
+        o Empire State Building, e o enorme Central Park. O teatro da Broadway fica no meio das luzes de neon de Times
+        Square.
+      </p>
+      <ul>
+        <li>Prefeito: Bill de Blasio</li>
+        <li>Governador: Andrew Cuomo</li>
+        <li>Fuso horário: <a href="https://pt.wikipedia.org/wiki/UTC%E2%88%9205:00">UTC−5</a></li>
+        <li>Horário de verão:<a href="https://pt.wikipedia.org/wiki/UTC%E2%88%9204:00">UTC−4</a></li>
+      </ul>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96797.83452116851!2d-73.979681!3d40.69748800000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-PT!2spt!4v1614608446131!5m2!1spt-PT!2spt"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" nome="map"></iframe>
+      <p></p>
+    </section>
+
+    <section>
+      <h3>Mapa SVG</h3>
+      <svg width="400" height="300">
+        <image href="images/NewYorkmap.jpg" class="mapa-svg">
+        </image>
+        <a href="images/Estatua da Liberdade.jpg" target="nome" style="width:100%;">
+          <polygon opacity="0.3" points="148,149 159,149 160,160 148,160" />
+        </a>
+        <a href="images/Central Park_grande.jpg" target="nome" style="width:100%;">
+          <polygon opacity="0.3" points="196,105 212,82 217,85 201,107" />
+        </a>
+        <a href="images/Times Square_grande.jpg" target="nome" style="width:100%;">
+          <polygon opacity="0.3" points="191,111 198,115 195,124 188,118" />
+        </a>
+        <a href="images/BrooklynBridge.jpg" target="nome" style="width:100%;">
+          <polygon opacity="0.3" points="181,148 190,147 195,157 180,158" />
+        </a>
+        <a href="images/EmpireStateBuilding.jpg" target="nome">
+          <polygon opacity="0.3" points="190,127 198,127 197,133 192,133" />
+        </a>
+      </svg>
+      <p></p>
+      <iframe width="800" height="800" frameborder="0" name="nome" class="newYork-iframe"></iframe>
+    </section>
+
+    <section class="menu-svg">
+      <h3>Menu SVG</h3>
+      <svg width="1200" height="200" class="svg-image">
+        <g transform="translate(100,20)">
+          <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:6"> <a fill="red"
+              href="index.html">Introdução</a>
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+            <animateMotion path="M 0 0 L 100 100" begin="1s" dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-360" to="0" begin="1s"
+              dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"
+              begin="1s" dur="5s" fill="freeze" />
+          </text>
+        </g>
+
+        <g transform="translate(30,10)">
+          <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:6"> <a fill="green"
+              href="local.html">Localização</a>
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+            <animateMotion path="M 0 0 L 50 50" begin="1s" dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360" to="0" begin="1s"
+              dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"
+              begin="1s" dur="5s" fill="freeze" />
+          </text>
+        </g>
+
+        <g transform="translate(60,70)">
+          <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:6"> <a fill="balck"
+              href="comentarios.html">Comentários</a>
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+            <animateMotion path="M 0 0 L 300 100" begin="1s" dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-120" to="0" begin="1s"
+              dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"
+              begin="1s" dur="5s" fill="freeze" />
+          </text>
+        </g>
+
+        <g transform="translate(90,80)">
+          <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:6"> <a fill="white"
+              href="quizz.html">Quizz</a>
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+            <animateMotion path="M 0 0 L 500 50" begin="1s" dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-270" to="0" begin="1s"
+              dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"
+              begin="1s" dur="5s" fill="freeze" />
+          </text>
+        </g>
+
+        <g transform="translate(40,50)">
+          <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:6"> <a fill="pink"
+              href="multimedia.html">Multimédia</a>
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+            <animateMotion path="M 0 0 L 700 40" begin="1s" dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-45" to="0" begin="1s"
+              dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"
+              begin="1s" dur="5s" fill="freeze" />
+          </text>
+        </g>
+
+        <g transform="translate(50,90)">
+          <text id="TextElement" x="0" y="0" style="font-family:Verdana;font-size:6"><a fill="orange"
+              href="info.html">Informações</a>
+            <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="5s" fill="freeze" />
+            <animateMotion path="M 0 0 L 900 15" begin="1s" dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="1s"
+              dur="5s" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="3" additive="sum"
+              begin="1s" dur="5s" fill="freeze" />
+          </text>
+        </g>
+      </svg>
+    </section>
+
+  </main>
+
+  <div class="col-3 col-s-12">
+    <aside class="aside">
+         <p>Nova Iorque ou Nova York (em inglês: New York) é a cidade mais populosa dos Estados Unidos e o centro da
+            Região
+            Metropolitana de Nova Iorque, uma das áreas metropolitanas mais populosas do mundo localizada na Região
+            Nordeste
+            dos Estados Unidos</p>
+    </aside>
+    <aside class="aside ">
+         <img src="images/BrooklynBridge.jpg" alt="Brooklyn Bridge" width="200">
+    </aside>
+   
+    </div>
+
+    <footer class="col-12 col-s-12">
+        <p>Diogo Pereira, 21902946, Universidade Lusófona de Humanidades e Tecnologias, 2020/2021</p>
+    </footer>
+</body>
+
+</html>
